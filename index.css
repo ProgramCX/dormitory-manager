@@ -1,0 +1,48 @@
+﻿/* #reg{
+    min-height: 40px;
+    min-width: 80px;
+    border-radius: 10px;
+    border:none;
+    background-color: rgb(20, 93, 201);
+    cursor: pointer;
+    color: #ffff;
+    
+}
+#reg:hover{
+    background-color: rgb(7, 59, 138);
+}
+#reg:active{
+    background-color:rgb(2, 40, 96) ;
+} */
+
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box; /* 确保元素的总宽度包括内边距和边框 */  
+}  
+  
+.menu{
+    background-image:linear-gradient(120deg,#fdfbfb ,#ebedee 100%);
+    box-shadow: 0 3px 18px #00000020;
+    backdrop-filter: blur(20px) saturate(0.8);
+    color: #fff;  
+    position: fixed;
+    margin: 10px 25px;
+    padding: 10px 5px;
+    width: calc(100% - 50px);
+    border-radius: 10px;
+}
+
+.menu ul{
+    list-style: none; 
+    margin: 0; 
+    margin: 10px;  
+    display: flex;  
+    justify-content: space-around; 
+}
+.menu a{
+    color: grey;
+    text-decoration: none; 
+   
+}
+
