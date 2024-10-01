@@ -59,6 +59,10 @@ body{
     color: #0066CC;
 }
 
+.menu a[value="checked"]{
+    color: #d60404d7;
+}
+
 .content{
     margin-top: calc(10px + 60px + 10px);
     width: 100vw;
@@ -131,13 +135,6 @@ body{
     margin-top: 10px;
     width: 100%;
     height: 40px;
-
-    font-size: 15px;
-    color: #fff;
-    background-color: #0084ff;
-    border-radius: 10px;
-    border:none;
-    cursor: pointer;
 }
 
 .reg button#submit:hover{
@@ -151,4 +148,75 @@ body{
 .reg label#auto-login-text {
     padding-left: 5px;
     color: white;
+}
+
+#footer{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+    margin: 10px 25px;
+    padding: 20px 10px;
+
+    width: calc(100% - 50px);
+    height: fit-content;
+
+
+    background-color: #000;
+    /* min-height: fit-content; */
+    border-radius: 10px;
+    position: absolute; 
+    bottom: 0;
+
+}
+
+#footer>p{
+    color: white;
+}
+
+dialog{
+    border-radius: 10px;
+    border: none;
+    padding: 20px 40px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+button{
+    font-size: 15px;
+    color: #fff;
+    background-color: #0084ff;
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #45a5ffe3;
+}
+
+button:active{
+    background-color: #1260a4;
+}
+#error #ok{
+    padding: 8px 10px;
+    float: right;
+
+}
+
+#error #icon-text{
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+#error #content{
+    margin: 10px 20px;
+}
+
+#error #title{
+    font-size: 25px;
 }
