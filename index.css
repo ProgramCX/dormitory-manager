@@ -21,16 +21,26 @@
     box-sizing: border-box; /* 确保元素的总宽度包括内边距和边框 */  
 }  
   
+body{
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(img/main.png);
+}
 .menu{
+    
     background-image:linear-gradient(120deg,#fdfbfb ,#ebedee 100%);
     box-shadow: 0 3px 18px #00000020;
-    backdrop-filter: blur(20px) saturate(0.8);
+    backdrop-filter: blur(30px);
     color: #fff;  
     position: fixed;
     margin: 10px 25px;
-    padding: 10px 5px;
+    padding: 5px 5px;
+    
     width: calc(100% - 50px);
     border-radius: 10px;
+    z-index: 1000;
 }
 
 .menu ul{
@@ -41,8 +51,104 @@
     justify-content: space-around; 
 }
 .menu a{
-    color: grey;
+    color: black;
+    font-size:18px;
     text-decoration: none; 
-   
+}
+.menu a:hover{
+    color: #0066CC;
 }
 
+.content{
+    margin-top: calc(10px + 60px + 10px);
+    width: 100vw;
+    padding-top: 90px;
+    position: absolute;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.reg{
+    backdrop-filter: blur(30px);
+    padding:40px;
+    border-radius: 10px;
+}
+
+.reg span#title{
+    color: #fff;
+    font-size: 30px;
+}
+
+.reg input[type="text"],.reg input[type="password"]{
+    width:100%;
+
+    margin-top: 10px;
+    height: 30px;
+
+    border: 2px solid #a6a3a3;
+    border-radius: 5px;
+    outline: none;
+
+    color: #ebedee;
+    
+    backdrop-filter: blur(10px) brightness(90%);
+    background-color: rgba(255, 255, 255, 0.1);
+
+    font-size: 20px;
+
+    padding: 5px;
+}
+
+.reg input[type="text"]:focus,.reg input[type="password"]:focus{
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.reg input[type="text"]::placeholder,.reg input[type="password"]::placeholder{
+    color: #fff;
+}
+
+.reg input[type="checkbox"]{
+    color: white;
+    background-color: #0084ff;
+}
+.reg form{
+    margin-bottom: 10px;
+}
+.reg a#forget-psw{
+    float: right;
+    text-decoration: none;
+    color: #0066CC;
+    cursor: pointer;
+}
+
+.reg a#forget-psw:hover{
+    color: #084787;
+}
+
+.reg button#submit{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+
+    font-size: 15px;
+    color: #fff;
+    background-color: #0084ff;
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+}
+
+.reg button#submit:hover{
+    background-color: #45a5ffe3;
+}
+
+.reg button#submit:active{
+    background-color: #1260a4;
+}
+
+.reg label#auto-login-text {
+    padding-left: 5px;
+    color: white;
+}
