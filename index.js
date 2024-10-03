@@ -1,22 +1,15 @@
-﻿function inputIsValid(){
-    let account=document.getElementById('id');
-    let password=document.getElementById('password');
-    if(account.value.trim()=='' || password.value.trim()==''){
-       return false;
-    }
+﻿function logined(){
+    //TODO: 判断是否登录
     return true;
 }
 function init(){
-    document.getElementById('submit').addEventListener('click',function(){
-        if(!inputIsValid())
-            $('#error #content').text('学号和密码不能为空！');
-            let errorDialog=document.querySelector("#error");
-            $('#error #ok').on('click', function() {
-                document.getElementById('error').close();
-            });
-            errorDialog.showModal();
-            
-    });
+        if(!logined()){
+            window.location.href="login/index.html";
+            return;
+        } 
+        //改变主内容盒子宽度
+        var sidebarWidth=$('.sidebar').innerWidth();
+        var mainContentWidth=$(window).width()-sidebarWidth;
+        $('.main-content').width(mainContentWidth);
 }
-
 init();
