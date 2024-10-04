@@ -6,6 +6,7 @@
     }
     return true;
 }
+
 function init(){
     document.getElementById('submit').addEventListener('click',function(){
         if(!inputIsValid())
