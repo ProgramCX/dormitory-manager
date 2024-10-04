@@ -1,4 +1,14 @@
 ﻿@import url(base.css);
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box; /* 确保元素的总宽度包括内边距和边框 */  
+}  
+  
+body{
+    background-image: none;
+}
+
 .sidebar{
     position: absolute;
     /* padding-top: 70px; */
