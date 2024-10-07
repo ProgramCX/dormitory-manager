@@ -1,4 +1,4 @@
-﻿@import url(base.css);
+﻿@import url(../base.css);
 * {  
     margin: 0;  
     padding: 0;  
@@ -59,9 +59,9 @@ body{
     background-color: white;
     height: calc(100vh - 75px);
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 
 .main-content .button-div{
@@ -105,6 +105,45 @@ body{
 }
 .button-div .button-with-text img{
     vertical-align: middle;
+}
+#notice-board{
+    width: 80%;
+    height: 60%;
+    overflow:auto;
+    background-color: #787878;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    padding: 10px 20px;
+}
+
+#notice-board th{
+    padding: 5px 10px;
+    background-color: #ececec;
+}
+
+
+#notice-board thead tr th:first-child {  
+    border-top-left-radius: 8px;
+
+}  
+
+#notice-board thead tr th:last-child{
+    border-top-right-radius: 8px;
+    width: 100%;
+}
+
+#notice-table td{
+    padding: 10px 15px;
+    background-color: #cacaca;
+}
+
+#title{
+    margin: 0 auto;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 20px;
 }
 #footer{
     display: flex;

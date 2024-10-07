@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../logo.jpg">
     <link rel="stylesheet" href="index.css">
-    <title>安徽理工大学学生宿舍管理系统</title>
+    <title>公告-安徽理工大学学生宿舍管理系统</title>
 </head>
 <body>
-    <script src="jq.min.js"></script>
+    <script src="../jq.min.js"></script>
     
     <nav class="menu"> 
     <ul>
@@ -23,7 +23,7 @@
     </nav>
     <div class="sidebar">
         <div id="personal-info">
-            <img src="img/avatar.png" alt="Avatar" height="80">
+            <img src="../img/avatar.png" alt="Avatar" height="80">
             <p id="name">Name</p>
             <p id="id">2024305222</p>
         </div>
@@ -37,9 +37,28 @@
     </div>
 
     <div class="main-content">
-        
+        <div id="title">
+            <img src="notice-board.svg" height="140">
+            <h1 style="font-size: 45px;">公告栏</h1>
+        </div>
+        <div id="notice-board">
+           <table id="notice-table">
+            <thead>
+                <tr>
+                    <th id="time">时间</th>
+                    <th id="content">内容</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td>2024.8.30</td>
+                <td class="body-content">安徽理工大学学生宿舍管理系统已经升级，版本号V3.0.0</td>
+            </tbody>
+            
+           </table>
+        </div>
     </div>
 
+    
     
     <div id="footer">
         <p>备案号-XXXXXX        版权所有©XXXXXX</p>
@@ -58,7 +77,8 @@
         <button id="ok">确定</button>
     </dialog>
 
-    <script src="index.js"></script>
-    <script src="../autologin.js"></script>
+    <script src="../base.js"></script>
+    <script src="../autologin.js" type="module"></script>
+    <script src="index.js" type="module"></script>
 </body>
 </html>
